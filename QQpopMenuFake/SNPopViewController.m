@@ -62,6 +62,7 @@
 #import "SNUtil.h"
 #import "UIImage+ImageWithColor.h"
 #import "UIButton+Sseen.h"
+#import "UIGestureRecognizer+Block.h"
 
 
 
@@ -105,8 +106,11 @@
     
     // 按钮的容器
     UIView *btnBg = [SNUtil createUIViewWithFrame:CGRectMake(ScreenWidth-width-5, point.y+10, width, btnFloatHeight*array.count) bgColor:nil cornerRadius:5];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
-    
+    @weakify(self);
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id sender) {
+        @strongify(self);
+        [self hide];
+    }];
     [view addGestureRecognizer:tap];
     [view addSubview:btnBg];
     
