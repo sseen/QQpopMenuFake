@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A3A0D61DB86E0100879539 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */; };
+		92BA8B871DB86EA200B890B8 /* UIButton+Sseen.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */; };
+		92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B891DB8916B00B890B8 /* SNPopViewController.m */; };
+		92BA8B8D1DB8A78600B890B8 /* SNUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B8C1DB8A78600B890B8 /* SNUtil.m */; };
+		92BA8B901DB8AB6C00B890B8 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B8F1DB8AB6C00B890B8 /* UIControl+YYAdd.m */; };
 		92FFB1831DB85CAF00CD3069 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FFB1821DB85CAF00CD3069 /* main.m */; };
 		92FFB1861DB85CAF00CD3069 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FFB1851DB85CAF00CD3069 /* AppDelegate.m */; };
 		92FFB1891DB85CAF00CD3069 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FFB1881DB85CAF00CD3069 /* ViewController.m */; };
 		92FFB18C1DB85CAF00CD3069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FFB18A1DB85CAF00CD3069 /* Main.storyboard */; };
 		92FFB18E1DB85CAF00CD3069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FFB18D1DB85CAF00CD3069 /* Assets.xcassets */; };
 		92FFB1911DB85CAF00CD3069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FFB18F1DB85CAF00CD3069 /* LaunchScreen.storyboard */; };
+		92FFB19A1DB85E8300CD3069 /* QQPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FFB1991DB85E8300CD3069 /* QQPopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sseen.h"; sourceTree = "<group>"; };
+		92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Sseen.m"; sourceTree = "<group>"; };
+		92BA8B881DB8916B00B890B8 /* SNPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPopViewController.h; sourceTree = "<group>"; };
+		92BA8B891DB8916B00B890B8 /* SNPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPopViewController.m; sourceTree = "<group>"; };
+		92BA8B8B1DB8A78600B890B8 /* SNUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUtil.h; sourceTree = "<group>"; };
+		92BA8B8C1DB8A78600B890B8 /* SNUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUtil.m; sourceTree = "<group>"; };
+		92BA8B8E1DB8AB6C00B890B8 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		92BA8B8F1DB8AB6C00B890B8 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		92FFB17E1DB85CAF00CD3069 /* QQpopMenuFake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQpopMenuFake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FFB1821DB85CAF00CD3069 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92FFB1841DB85CAF00CD3069 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +42,8 @@
 		92FFB18D1DB85CAF00CD3069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FFB1901DB85CAF00CD3069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FFB1921DB85CAF00CD3069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FFB1981DB85E8300CD3069 /* QQPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQPopMenuView.h; sourceTree = "<group>"; };
+		92FFB1991DB85E8300CD3069 /* QQPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQPopMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,18 @@
 				92FFB1851DB85CAF00CD3069 /* AppDelegate.m */,
 				92FFB1871DB85CAF00CD3069 /* ViewController.h */,
 				92FFB1881DB85CAF00CD3069 /* ViewController.m */,
+				92BA8B8B1DB8A78600B890B8 /* SNUtil.h */,
+				92BA8B8C1DB8A78600B890B8 /* SNUtil.m */,
+				92BA8B8E1DB8AB6C00B890B8 /* UIControl+YYAdd.h */,
+				92BA8B8F1DB8AB6C00B890B8 /* UIControl+YYAdd.m */,
+				92FFB1981DB85E8300CD3069 /* QQPopMenuView.h */,
+				92FFB1991DB85E8300CD3069 /* QQPopMenuView.m */,
+				92BA8B881DB8916B00B890B8 /* SNPopViewController.h */,
+				92BA8B891DB8916B00B890B8 /* SNPopViewController.m */,
+				92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */,
+				92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */,
+				92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */,
+				92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */,
 				92FFB18A1DB85CAF00CD3069 /* Main.storyboard */,
 				92FFB18D1DB85CAF00CD3069 /* Assets.xcassets */,
 				92FFB18F1DB85CAF00CD3069 /* LaunchScreen.storyboard */,
@@ -150,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A3A0D61DB86E0100879539 /* UIImage+ImageWithColor.m in Sources */,
 				92FFB1891DB85CAF00CD3069 /* ViewController.m in Sources */,
+				92BA8B8D1DB8A78600B890B8 /* SNUtil.m in Sources */,
+				92BA8B901DB8AB6C00B890B8 /* UIControl+YYAdd.m in Sources */,
 				92FFB1861DB85CAF00CD3069 /* AppDelegate.m in Sources */,
+				92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */,
 				92FFB1831DB85CAF00CD3069 /* main.m in Sources */,
+				92BA8B871DB86EA200B890B8 /* UIButton+Sseen.m in Sources */,
+				92FFB19A1DB85E8300CD3069 /* QQPopMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +345,7 @@
 				92FFB1971DB85CAF00CD3069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
