@@ -58,6 +58,8 @@
 #endif
 #endif
 
+
+
 #import "SNPopViewController.h"
 #import "SNUtil.h"
 #import "UIImage+ImageWithColor.h"
@@ -106,9 +108,8 @@
     
     // 按钮的容器
     UIView *btnBg = [SNUtil createUIViewWithFrame:CGRectMake(ScreenWidth-width-5, point.y+10, width, btnFloatHeight*array.count) bgColor:nil cornerRadius:5];
-    @weakify(self);
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id sender) {
-        @strongify(self);
         [self hide];
     }];
     [view addGestureRecognizer:tap];
@@ -117,12 +118,10 @@
     for (int i = 0; i < array.count; i++) {
         NSString *title = array[i][@"title"];
         UIImage *image = [UIImage imageNamed:array[i][@"image"]];
-        @weakify(self);
         UIButton *btn = [SNUtil createButtonWithFrame:CGRectMake(0, btnFloatHeight*i, width, btnFloatHeight) title:title fontSize:15 titleColor:[UIColor redColor] bgColor:[UIColor whiteColor] action:^{
             if (action) {
                 action(i);
             }
-            @strongify(self);
             [self hide];
         }];
         [btn setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithWhite:0 alpha:0.1] size:btn.frame.size] forState:UIControlStateHighlighted];
