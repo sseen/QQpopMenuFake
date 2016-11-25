@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924363331DE5B34F00F0B9DE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924363321DE5B34F00F0B9DE /* SecondViewController.m */; };
 		92A3A0D61DB86E0100879539 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */; };
 		92BA8B871DB86EA200B890B8 /* UIButton+Sseen.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */; };
 		92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B891DB8916B00B890B8 /* SNPopViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		924363311DE5B34F00F0B9DE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		924363321DE5B34F00F0B9DE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
 		92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
 		92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sseen.h"; sourceTree = "<group>"; };
@@ -60,6 +63,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		928C771F1DE577A300E919A3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				92BA8B8B1DB8A78600B890B8 /* SNUtil.h */,
+				92BA8B8C1DB8A78600B890B8 /* SNUtil.m */,
+				92BA8B8E1DB8AB6C00B890B8 /* UIControl+YYAdd.h */,
+				92BA8B8F1DB8AB6C00B890B8 /* UIControl+YYAdd.m */,
+				92FFB1981DB85E8300CD3069 /* QQPopMenuView.h */,
+				92FFB1991DB85E8300CD3069 /* QQPopMenuView.m */,
+				92BA8B881DB8916B00B890B8 /* SNPopViewController.h */,
+				92BA8B891DB8916B00B890B8 /* SNPopViewController.m */,
+				92BA8B911DB8E64500B890B8 /* UIGestureRecognizer+Block.h */,
+				92BA8B921DB8E64500B890B8 /* UIGestureRecognizer+Block.m */,
+				92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */,
+				92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */,
+				92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */,
+				92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		928C77201DE577B200E919A3 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				92FFB1871DB85CAF00CD3069 /* ViewController.h */,
+				92FFB1881DB85CAF00CD3069 /* ViewController.m */,
+				924363311DE5B34F00F0B9DE /* SecondViewController.h */,
+				924363321DE5B34F00F0B9DE /* SecondViewController.m */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
 		92FFB1751DB85CAE00CD3069 = {
 			isa = PBXGroup;
 			children = (
@@ -81,22 +116,8 @@
 			children = (
 				92FFB1841DB85CAF00CD3069 /* AppDelegate.h */,
 				92FFB1851DB85CAF00CD3069 /* AppDelegate.m */,
-				92FFB1871DB85CAF00CD3069 /* ViewController.h */,
-				92FFB1881DB85CAF00CD3069 /* ViewController.m */,
-				92BA8B8B1DB8A78600B890B8 /* SNUtil.h */,
-				92BA8B8C1DB8A78600B890B8 /* SNUtil.m */,
-				92BA8B8E1DB8AB6C00B890B8 /* UIControl+YYAdd.h */,
-				92BA8B8F1DB8AB6C00B890B8 /* UIControl+YYAdd.m */,
-				92FFB1981DB85E8300CD3069 /* QQPopMenuView.h */,
-				92FFB1991DB85E8300CD3069 /* QQPopMenuView.m */,
-				92BA8B881DB8916B00B890B8 /* SNPopViewController.h */,
-				92BA8B891DB8916B00B890B8 /* SNPopViewController.m */,
-				92BA8B911DB8E64500B890B8 /* UIGestureRecognizer+Block.h */,
-				92BA8B921DB8E64500B890B8 /* UIGestureRecognizer+Block.m */,
-				92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */,
-				92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */,
-				92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */,
-				92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */,
+				928C77201DE577B200E919A3 /* viewcontrollers */,
+				928C771F1DE577A300E919A3 /* utils */,
 				92FFB18A1DB85CAF00CD3069 /* Main.storyboard */,
 				92FFB18D1DB85CAF00CD3069 /* Assets.xcassets */,
 				92FFB18F1DB85CAF00CD3069 /* LaunchScreen.storyboard */,
@@ -193,6 +214,7 @@
 				92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */,
 				92FFB1831DB85CAF00CD3069 /* main.m in Sources */,
 				92BA8B871DB86EA200B890B8 /* UIButton+Sseen.m in Sources */,
+				924363331DE5B34F00F0B9DE /* SecondViewController.m in Sources */,
 				92FFB19A1DB85E8300CD3069 /* QQPopMenuView.m in Sources */,
 				92BA8B931DB8E64500B890B8 /* UIGestureRecognizer+Block.m in Sources */,
 			);

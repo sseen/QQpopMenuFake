@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "QQPopMenuView.h"
 #import "SNPopViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIPopoverPresentationControllerDelegate>
 
 @end
 
@@ -26,6 +27,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
+    return UIModalPresentationNone;
+}
+
+- (IBAction)ckTop:(UIButton *)sender {
+    SecondViewController *pop = [[SecondViewController alloc] init];
+    
+    pop.modalPresentationStyle = UIModalPresentationPopover;
+    pop.popoverPresentationController.delegate = self;
+    pop.popoverPresentationController.sourceView = sender;
+    pop.popoverPresentationController.sourceRect = sender.bounds;
+    
+    [self presentViewController:pop animated:true completion:nil];
+    
+}
+
 
 - (IBAction)ckPop:(id)sender {
     [SNPopViewController showWithItems:@[@{@"title":@"发起讨论",@"image":@"session_popMenu_createChat_icon"},
