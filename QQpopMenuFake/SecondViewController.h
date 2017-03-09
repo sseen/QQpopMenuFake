@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^ckItem)(NSInteger index);
+
 @interface SecondViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITableView *mainTable;
+@property (strong, nonatomic) ckItem blockCKItem;
 
 @end

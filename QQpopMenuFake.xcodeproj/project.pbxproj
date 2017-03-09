@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		924363331DE5B34F00F0B9DE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924363321DE5B34F00F0B9DE /* SecondViewController.m */; };
+		92741F3B1DF11BBD004EC8C0 /* SNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92741F3A1DF11BBD004EC8C0 /* SNTableViewCell.m */; };
 		92A3A0D61DB86E0100879539 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */; };
 		92BA8B871DB86EA200B890B8 /* UIButton+Sseen.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B861DB86EA200B890B8 /* UIButton+Sseen.m */; };
 		92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BA8B891DB8916B00B890B8 /* SNPopViewController.m */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		924363311DE5B34F00F0B9DE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		924363321DE5B34F00F0B9DE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		92741F391DF11BBD004EC8C0 /* SNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTableViewCell.h; sourceTree = "<group>"; };
+		92741F3A1DF11BBD004EC8C0 /* SNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNTableViewCell.m; sourceTree = "<group>"; };
 		92A3A0D41DB86E0100879539 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
 		92A3A0D51DB86E0100879539 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
 		92BA8B851DB86EA200B890B8 /* UIButton+Sseen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sseen.h"; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				92FFB1881DB85CAF00CD3069 /* ViewController.m */,
 				924363311DE5B34F00F0B9DE /* SecondViewController.h */,
 				924363321DE5B34F00F0B9DE /* SecondViewController.m */,
+				92741F391DF11BBD004EC8C0 /* SNTableViewCell.h */,
+				92741F3A1DF11BBD004EC8C0 /* SNTableViewCell.m */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				92FFB1891DB85CAF00CD3069 /* ViewController.m in Sources */,
 				92BA8B8D1DB8A78600B890B8 /* SNUtil.m in Sources */,
 				92BA8B901DB8AB6C00B890B8 /* UIControl+YYAdd.m in Sources */,
+				92741F3B1DF11BBD004EC8C0 /* SNTableViewCell.m in Sources */,
 				92FFB1861DB85CAF00CD3069 /* AppDelegate.m in Sources */,
 				92BA8B8A1DB8916B00B890B8 /* SNPopViewController.m in Sources */,
 				92FFB1831DB85CAF00CD3069 /* main.m in Sources */,

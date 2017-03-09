@@ -7,8 +7,10 @@
 //
 
 #import "SecondViewController.h"
+#import "SNTableViewCell.h"
 
-@interface SecondViewController ()
+@interface SecondViewController () <UITableViewDelegate, UITableViewDataSource>
+
 
 @end
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _mainTable.delegate = self;
+    _mainTable.dataSource = self;
+    
+    [self.view addSubview:_mainTable];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,5 +31,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - talbe
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SNTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell0"];
+    cell.lblTitle.text = @"ok";
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _blockCKItem(indexPath.row);
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 
 @end

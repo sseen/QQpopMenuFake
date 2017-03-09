@@ -33,7 +33,13 @@
 }
 
 - (IBAction)ckTop:(UIButton *)sender {
-    SecondViewController *pop = [[SecondViewController alloc] init];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SecondViewController *pop = (SecondViewController *)[sb instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    __weak SecondViewController * weakPop = pop;
+    pop.blockCKItem = ^(NSInteger item) {
+        NSLog(@"%ld",(long)item);
+
+    };
     
     pop.modalPresentationStyle = UIModalPresentationPopover;
     pop.popoverPresentationController.delegate = self;
