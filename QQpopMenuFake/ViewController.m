@@ -41,11 +41,14 @@
 
     };
     
+    // 可以类似做个库 https://github.com/tichise/PopOverMenu
     pop.modalPresentationStyle = UIModalPresentationPopover;
     pop.popoverPresentationController.delegate = self;
-    pop.popoverPresentationController.sourceView = sender;
-    pop.popoverPresentationController.sourceRect = sender.bounds;
-    
+    // pop.popoverPresentationController.permittedArrowDirections = 0;
+    pop.popoverPresentationController.backgroundColor = [UIColor whiteColor];
+    pop.popoverPresentationController.sourceView = sender.superview;
+    pop.popoverPresentationController.sourceRect = sender.frame;
+    pop.modalTransitionStyle  = UIModalTransitionStyleCoverVertical;
     [self presentViewController:pop animated:true completion:nil];
     
 }
